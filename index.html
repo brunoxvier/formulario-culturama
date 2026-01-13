@@ -45,16 +45,16 @@
                 <legend>Perfil</legend>
 
                 <p>Gênero:</p>
-                <input type="radio" name="userGender" value="feminino">
-                <label for="userGender">Feminino</label>
-                <input type="radio" name="userGender" value="masculino">
-                <label for="userGender">Masculino</label>
-                <input type="radio" name="userGender" value="notInformed">
-                <label for="userGender">Prefiro não informar</label>
+                <input type="radio" id="fem" name="userGender" value="feminino">
+                <label for="fem">Feminino</label>
+                <input type="radio" id="masc" name="userGender" value="masculino">
+                <label for="masc">Masculino</label>
+                <input type="radio" id="notInformed" name="userGender" value="notInformed">
+                <label for="notInformed">Prefiro não informar</label>
                 <br>
 
                 <label for="maritalStatus">Estado civil:</label>
-                <select name="maritalStatus">
+                <select id="maritalStatus" name="userMaritalStatus">
                     <option value="notInformed">Selecione</option>
                     <option value="casado">Casado</option>
                     <option value="solteiro">Solteiro</option>
@@ -64,8 +64,8 @@
                 </select>
                 <br>
 
-                <label for="userState">Estado:</label>
-                <select name="userState">
+                <label for="state">Estado:</label>
+                <select id="state" name="userState">
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
                     <option value="amapa">Amapá</option>
@@ -95,8 +95,8 @@
                     <option value="tocantins">Tocantins</option>
                 </select>
 
-                <label for="userCity">Cidade:</label>
-                <input type="text" name="userCity">
+                <label for="city">Cidade:</label>
+                <input id="city" type="text" name="userCity">
             </fieldset>
 
             <button type="submit">Enviar</button>
